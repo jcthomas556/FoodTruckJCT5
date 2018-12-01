@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/foodExamples"
+        android:layout_width="402dp"
+        android:layout_height="97dp"
+        android:contentDescription="Cycle through pictures of available menu items."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="115dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="1dp"
+        android:text="Sides"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="111dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginBottom="1dp"
+        android:text="Drinks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartPreview" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="115dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="1dp"
+        android:text="Sandwiches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cartPreview"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="111dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="43dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cartPreview"
+        app:layout_constraintTop_toBottomOf="@+id/foodExamples" />
+
+    <ImageView
+        android:id="@+id/cartPreview"
+        android:layout_width="268dp"
+        android:layout_height="333dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodExamples"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</android.support.constraint.ConstraintLayout>
