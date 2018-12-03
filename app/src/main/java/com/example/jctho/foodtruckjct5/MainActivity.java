@@ -81,9 +81,9 @@ public class MainActivity extends AppCompatActivity {
         Button drinks = findViewById(R.id.button2);
         Button sandwich = findViewById(R.id.button3);
 
-        sandwich.setOnClickListener(this);//not sure what's going on here
-        sides.setOnClickListener(this);
-        drinks.setOnClickListener(this);
+        sandwich.setOnClickListener((View.OnClickListener) this);//not sure what's going on here
+        sides.setOnClickListener((View.OnClickListener) this);
+        drinks.setOnClickListener((View.OnClickListener) this);
     }
 
     public void openSandwich_select() {
