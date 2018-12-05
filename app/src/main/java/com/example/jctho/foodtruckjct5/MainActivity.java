@@ -3,8 +3,11 @@ package com.example.jctho.foodtruckjct5;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.graphics.Point;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,10 +16,11 @@ import com.squareup.sdk.pos.CurrencyCode;
 import com.squareup.sdk.pos.PosClient;
 import com.squareup.sdk.pos.PosSdk;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private long animationDuration = 1000;
     private static final String APPLICATION_ID = "sq0idp-1OcBrfMiihiS4krzlGJ2HQ";
-
+    private ConstraintLayout sandView = null;
     private PosClient posClient;
 
     // create a new charge request and initiate a Point of Sale transaction
@@ -77,13 +81,30 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+        sandView = findViewById(R.id.sandWhichView);
+
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size= new Point();
+        display.getSize(size);
+        sandView.setX(size.x);
+
         Button sides = findViewById(R.id.button);
         Button drinks = findViewById(R.id.button2);
         Button sandwich = findViewById(R.id.button3);
 
-        sandwich.setOnClickListener((View.OnClickListener) this);//not sure what's going on here
+
+
+        sandwich.setOnClickListener(this);//not sure what's going on here
         sides.setOnClickListener((View.OnClickListener) this);
         drinks.setOnClickListener((View.OnClickListener) this);
+    }
+
+    public void hideSandwhich(View view){
+        sandView.animate().x(sandView.getWidth()).setDuration(animationDuration);
+    }
+
+    public void showSandwhich(View view){
+        sandView.animate().x(0).setDuration(animationDuration);
     }
 
     public void openSandwich_select() {
@@ -106,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.button3:
-                openSandwich_select();
+                showSandwhich(sandView);
                 break;
             case R.id.button:
                 openSide_select();
