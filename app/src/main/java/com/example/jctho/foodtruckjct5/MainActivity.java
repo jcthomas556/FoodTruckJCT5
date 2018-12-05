@@ -91,12 +91,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button sides = findViewById(R.id.button);
         Button drinks = findViewById(R.id.button2);
         Button sandwich = findViewById(R.id.button3);
+        Button sandBack = findViewById(R.id.sandback);
 
 
 
         sandwich.setOnClickListener(this);//not sure what's going on here
-        sides.setOnClickListener((View.OnClickListener) this);
-        drinks.setOnClickListener((View.OnClickListener) this);
+        sides.setOnClickListener(this);
+        drinks.setOnClickListener(this);
     }
 
     public void hideSandwhich(View view){
