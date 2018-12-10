@@ -184,8 +184,10 @@
             android:onClick="nothing"
             app:layout_constraintBottom_toTopOf="@+id/sandback"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.464">
 
             <LinearLayout
                 android:layout_width="323dp"
@@ -193,20 +195,420 @@
                 android:gravity="top"
                 android:orientation="vertical">
 
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/Reuben"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sandwhich1"
+                        android:layout_width="157dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Reuben"
+                        android:textColor="#000000"
+                        android:textSize="42sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/sandwhich1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        android:layout_width="42dp"
+                        android:layout_height="70dp"
+                        android:text="Button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/Swiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sandwhich1"
+                        android:layout_width="157dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Swiss"
+                        android:textColor="#000000"
+                        android:textSize="42sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/sandwhich1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        android:layout_width="42dp"
+                        android:layout_height="70dp"
+                        android:text="Button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/Cucumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sandwhich1"
+                        android:layout_width="157dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Reuben"
+                        android:textColor="#000000"
+                        android:textSize="42sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/sandwhich1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        android:layout_width="42dp"
+                        android:layout_height="70dp"
+                        android:text="Button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/Ham"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sandwhich1"
+                        android:layout_width="157dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Cucumber"
+                        android:textColor="#000000"
+                        android:textSize="42sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/sandwhich1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        android:layout_width="42dp"
+                        android:layout_height="70dp"
+                        android:text="Button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/GrilledCheese"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sandwhich1"
+                        android:layout_width="157dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Grilled"
+                        android:textColor="#000000"
+                        android:textSize="42sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/sandwhich1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        android:layout_width="42dp"
+                        android:layout_height="70dp"
+                        android:text="Button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/Sandwhich6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sandwhich1"
+                        android:layout_width="157dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Athing"
+                        android:textColor="#000000"
+                        android:textSize="42sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/sandwhich1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        android:layout_width="42dp"
+                        android:layout_height="70dp"
+                        android:text="Button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/Meatball"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sandwhich1"
+                        android:layout_width="157dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Meatball"
+                        android:textColor="#000000"
+                        android:textSize="42sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/sandwhich1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        android:layout_width="42dp"
+                        android:layout_height="70dp"
+                        android:text="Button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/MoreFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sandwhich1"
+                        android:layout_width="157dp"
+                        android:layout_height="63dp"
+                        android:layout_marginStart="1dp"
+                        android:text="Something"
+                        android:textColor="#000000"
+                        android:textSize="42sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:text="-"
+                        app:layout_constraintStart_toEndOf="@+id/sandwhich1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button15"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="1dp"
+                        android:text="+"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button16"
+                        android:layout_width="42dp"
+                        android:layout_height="70dp"
+                        android:text="Button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/sandwhich1"
-                    android:layout_width="190dp"
-                    android:layout_height="90dp"
-                    android:text="Reuben"
-                    android:textColor="#000000"
-                    android:textSize="42sp"
-                    tools:layout_editor_absoluteX="43dp"
-                    tools:layout_editor_absoluteY="44dp" />
+                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>
