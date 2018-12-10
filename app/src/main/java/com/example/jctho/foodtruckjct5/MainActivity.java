@@ -16,8 +16,11 @@ import com.squareup.sdk.pos.CurrencyCode;
 import com.squareup.sdk.pos.PosClient;
 import com.squareup.sdk.pos.PosSdk;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private ArrayList<Item> order = new ArrayList<>();
     private long animationDuration = 500;
     private static final String APPLICATION_ID = "sq0idp-1OcBrfMiihiS4krzlGJ2HQ";
     private ConstraintLayout sandView = null;
@@ -113,6 +116,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void hideSandwhich(View view){
         sandView.animate().x(sandView.getWidth()).setDuration(animationDuration);
+    }
+
+    public void nothing(View view){
     }
 
     public void showSandwhich(View view){
