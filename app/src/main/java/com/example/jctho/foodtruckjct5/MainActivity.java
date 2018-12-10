@@ -16,11 +16,16 @@ import com.squareup.sdk.pos.CurrencyCode;
 import com.squareup.sdk.pos.PosClient;
 import com.squareup.sdk.pos.PosSdk;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private long animationDuration = 1000;
+    private ArrayList<Item> order = new ArrayList<>();
+    private long animationDuration = 500;
     private static final String APPLICATION_ID = "sq0idp-1OcBrfMiihiS4krzlGJ2HQ";
     private ConstraintLayout sandView = null;
+    private ConstraintLayout drinksView = null;
+    private ConstraintLayout sidesView = null;
     private PosClient posClient;
 
     // create a new charge request and initiate a Point of Sale transaction
@@ -82,29 +87,58 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         sandView = findViewById(R.id.sandWhichView);
+        drinksView = findViewById(R.id.drinkView);
+        sidesView = findViewById(R.id.sideView);
+
 
         Display display = getWindowManager().getDefaultDisplay();
         Point size= new Point();
         display.getSize(size);
         sandView.setX(size.x);
+        drinksView.setX(size.x);
+        sidesView.setX(size.x);
+
 
         Button sides = findViewById(R.id.button);
         Button drinks = findViewById(R.id.button2);
         Button sandwich = findViewById(R.id.button3);
+        Button sandBack = findViewById(R.id.sandback);
+        Button drinkBack = findViewById(R.id.drinkback);
+        Button sidesBack = findViewById(R.id.sidesback);
 
-
-
+        sandBack.setOnClickListener(this);
         sandwich.setOnClickListener(this);//not sure what's going on here
-        sides.setOnClickListener((View.OnClickListener) this);
-        drinks.setOnClickListener((View.OnClickListener) this);
+        sides.setOnClickListener(this);
+        drinks.setOnClickListener(this);
+        drinkBack.setOnClickListener(this);
+        sidesBack.setOnClickListener(this);
     }
 
     public void hideSandwhich(View view){
         sandView.animate().x(sandView.getWidth()).setDuration(animationDuration);
     }
 
+    public void nothing(View view){
+    }
+
     public void showSandwhich(View view){
         sandView.animate().x(0).setDuration(animationDuration);
+    }
+
+    public void hideDrinks(View view){
+        drinksView.animate().x(drinksView.getWidth()).setDuration(animationDuration);
+    }
+
+    public void showDrinks(View view){
+        drinksView.animate().x(0).setDuration(animationDuration);
+    }
+
+    public void hideSides(View view){
+        sidesView.animate().x(sidesView.getWidth()).setDuration(animationDuration);
+    }
+
+    public void showSides(View view){
+        sidesView.animate().x(0).setDuration(animationDuration);
     }
 
     public void openSandwich_select() {
@@ -130,12 +164,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 showSandwhich(sandView);
                 break;
             case R.id.button:
-                openSide_select();
+                showSides(sidesView);
                 break;
             case R.id.button2:
-                openDrink_select();
+                showDrinks(drinksView);
                 break;
-
+            case R.id.sandback:
+                hideSandwhich(sandView);
+                break;
+            case R.id.sidesback:
+                hideSides(sidesView);
+                break;
+            case R.id.drinkback:
+                hideDrinks(drinksView);
+                break;
         }
 
 
