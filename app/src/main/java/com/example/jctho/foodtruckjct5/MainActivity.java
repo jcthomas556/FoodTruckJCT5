@@ -238,26 +238,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         private float price = 0;
     }
 
-    private ArrayList order = new ArrayList<>();//temporary use in this class
+    private ArrayList order = new ArrayList<>();
 
     public void addReubon(View view) {
-        TextView reubenCounter = findViewById(R.id.textView9);////jct
-        int itemQuantity = Integer.valueOf(reubenCounter.getText().toString());
+        TextView reubenCounter = findViewById(R.id.textView9);//this is the increasing 0 // this works
+        int itemQuantity = Integer.valueOf(reubenCounter.getText().toString());//this should turn the number in ^ to an int
+        TextView menuItemOne = findViewById(R.id.textView10);//this is the view that should be in the main menu
 
-        Item reubenOne = new Item();
+
+
+        Item reubenOne = new Item();//make a new reuben
         reubenOne.name = "Reuben";
         reubenOne.price = 500;///vs "$500"?
 
-        if (order.contains(reubenOne)) {
-            order.remove(reubenOne);
+        if (order.contains(reubenOne)) {//if the order list has a reuben already it will clear it out completely
+            order.remove(reubenOne);//^
+        }
 
-            for (int x = 0; x <= itemQuantity; x++) {
-                order.add(reubenOne);
+        for (int x = 0; x < itemQuantity; x++) {//add's however many reubens are added to the list so far
+            order.add(reubenOne);
 
-            }
+
+            //menuItemOne.setText(order.indexOf(itemQuantity-1));//this probably wouldn't work
+
+            String theOrder = order.toString();//theOrder is never turning into a string
+
 
         }
+
+
+
+
+
     }
+
+
 
 
 }
