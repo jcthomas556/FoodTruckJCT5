@@ -219,30 +219,30 @@
                         app:layout_constraintStart_toEndOf="@+id/sandwhich1"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="40dp"
-                        android:layout_height="70dp"
-                        app:layout_constraintStart_toEndOf="@+id/button14"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:srcCompat="@tools:sample/avatars" />
-
                     <Button
                         android:id="@+id/button15"
                         android:layout_width="40dp"
                         android:layout_height="70dp"
                         android:layout_marginStart="1dp"
                         android:text="+"
-                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintStart_toEndOf="@+id/textView9"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <Button
                         android:id="@+id/button16"
                         android:layout_width="42dp"
                         android:layout_height="70dp"
-                        android:text="Button"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        android:text="R Accept"
                         app:layout_constraintStart_toEndOf="@+id/button15"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:text="0"
+                        app:layout_constraintStart_toEndOf="@+id/button14"
                         app:layout_constraintTop_toTopOf="parent" />
                 </android.support.constraint.ConstraintLayout>
 
