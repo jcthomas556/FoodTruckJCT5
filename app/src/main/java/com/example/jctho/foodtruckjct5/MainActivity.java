@@ -153,20 +153,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sidesView.animate().x(0).setDuration(animationDuration);
     }
 
-    public void openSandwich_select() {
-        Intent intent = new Intent(this, TestActivity1.class);
-        startActivity(intent);
-    }
 
-    public void openSide_select() {
-        Intent intent = new Intent(this, TestActivity1.class);
-        startActivity(intent);
-    }
-
-    public void openDrink_select() {
-        Intent intent = new Intent(this, TestActivity1.class);
-        startActivity(intent);
-    }
 
 
     //@Override
@@ -223,19 +210,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             sandwichDecrementer.setText("" + countButton14and15);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
