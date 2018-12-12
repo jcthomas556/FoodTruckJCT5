@@ -196,6 +196,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button15:
                 plusButtonOne(sandView);//keep putting sandView
                 break;
+            case R.id.button14:
+                minusButtonOne(sandView);
+                break;
         }
 
 
@@ -209,10 +212,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void plusButtonOne(View view) {
         countButton14and15++;
 
-        TextView sandwichIncrementer = findViewById(R.id.textView9);
+        TextView sandwichIncrementer = findViewById(R.id.textView19);
         sandwichIncrementer.setText("" + countButton14and15);
     }
 
+    public void minusButtonOne(View view) {
+        if(countButton14and15 > 0){
+            countButton14and15--;
+            TextView sandwichDecrementer = findViewById(R.id.textView19);
+            sandwichDecrementer.setText("" + countButton14and15);
+        }
+    }
 
 
 
@@ -238,12 +248,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         private float price = 0;
     }
 
+
     private ArrayList order = new ArrayList<>();
 
     public void addReubon(View view) {
-        TextView reubenCounter = findViewById(R.id.textView9);//this is the increasing 0 // this works
+        TextView reubenCounter = findViewById(R.id.textView19);//this is the increasing 0 // this works
         int itemQuantity = Integer.valueOf(reubenCounter.getText().toString());//this should turn the number in ^ to an int
-        TextView menuItemOne = findViewById(R.id.textView10);//this is the view that should be in the main menu
+        //TextView menuItemOne = findViewById(R.id.textView10);//this is the view that should be in the main menu
 
 
 
