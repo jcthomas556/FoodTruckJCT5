@@ -7,7 +7,6 @@ import android.graphics.Point;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.Display;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +18,6 @@ import com.squareup.sdk.pos.PosClient;
 import com.squareup.sdk.pos.PosSdk;
 
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

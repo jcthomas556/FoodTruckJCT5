@@ -4,9 +4,7 @@ public class Item {
     private String name;
     private Float price;
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
     public void setName(String name) {
         this.name = name;
